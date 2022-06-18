@@ -9,6 +9,9 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
+        '''
+        Since it is sorted, if current node val equals next node val, make the current next to the next next node.
+        '''
         current = head
         while current.next != None:
             if current.val == current.next.val:
