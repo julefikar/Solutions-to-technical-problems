@@ -1,3 +1,4 @@
+#If it is even, change the values. TC: O(N), SC: O(1)
 class Solution:
     def sortArrayByParity(self, nums: List[int]) -> List[int]:
         start=0
