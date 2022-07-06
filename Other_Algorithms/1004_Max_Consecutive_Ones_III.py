@@ -16,7 +16,7 @@ class Solution(object):
         for windowEnd in range(len(nums)):
             right = nums[windowEnd]
             hm[right] = hm.get(right, 0) + 1
-            while hm[int('0')] > k:
+            while hm["0"] > k:
                 hm[nums[windowStart]] -= 1
                 windowStart += 1
             longest = max(longest, windowEnd - windowStart + 1)
