@@ -5,6 +5,14 @@ you should not use any extra space so that that the solution have a space comple
 Input: [2, 3, 3, 3, 6, 9, 9]
 Output: 4
 Explanation: The first four elements after removing the duplicates will be [2, 3, 6, 9].
+
+Make two pointers, one that should that the next element is a non duplicate.
+When the last non duplicate element doesn't equal the current element, 
+    we have to make sure that the index of the non duplicated element equals current index.
+    Increment the non_duplicate counter
+increment the index counter
+TC: O(N)
+SC: O(1)
 '''
 def remove_duplicates(arr):
     if not arr: #Empty input
