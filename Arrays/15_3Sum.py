@@ -4,6 +4,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
+        '''
+        Two pointer problem
+        TC: O(N^2) two loops used, must iterate through array n^2 times.
+        SC: O(N) Extra space used
+        '''
         ans = []
         nums.sort() #Sorting the array will make the indices easier to operate two pointer solution.
         for i in range(len(nums)-2): #-2 because there consists of three elements here, the index, left, and right pointer.
